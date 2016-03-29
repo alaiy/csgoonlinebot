@@ -7,6 +7,7 @@ include("Telegram.php");
 // Set the bot TOKEN
 $bot_id = "201119790:AAF5OiT_UDx_j1YLwaBCW8pe7oKVhr7LjeY";
 
+
 // Instances the class
 $telegram = new Telegram($bot_id);
 /* If you need to manually take some parameters
@@ -51,5 +52,9 @@ if ($text == "/where") {
   // Send the Catania's coordinate
   $content = array('chat_id' => $chat_id, 'latitude' => "37.5", 'longitude' => "15.1" );
   $telegram->sendLocation($content);
+}
+if($text == "/updateme") {
+  $telegram->setWebhook("https://csgoonlinebot.herokuapp.com/update.php");
+  $telegram->sendMessage("updated");
 }
 ?>
