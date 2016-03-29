@@ -59,7 +59,7 @@ if($text == "/updateme") {
   $telegram->sendMessage($content);
 }
 if($text == "/lena_plus_sasha") {
-  $content = array('chat_id' => $chat_id, 'text' => '= love!!!!!!!!');
+  $content = array('chat_id' => $chat_id, 'text' => '= love!!!!!!!!!!!!!');
   $telegram->sendMessage($content);
 }
 ?>
