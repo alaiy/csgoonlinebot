@@ -56,7 +56,8 @@ if ($text == "/where") {
 
 if($text == "/updateme") {
   $telegram->setWebhook("https://csgoonlinebot.herokuapp.com/update.php");
-  $telegram->sendMessage("updated!");
+  $content = array('chat_id' => $chat_id, 'text' => 'updated!');
+  $telegram->sendMessage($content);
 }
 
 ?>
