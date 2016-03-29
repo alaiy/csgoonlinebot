@@ -62,7 +62,7 @@ if($text == "/lena_plus_sasha") {
   $content = array('chat_id' => $chat_id, 'text' => '= love!');
   $telegram->sendMessage($content);
 }
-if($test == "/ok") {
+if($test == "/mytest") {
   $content = array('chat_id' => $chat_id, 'text' => '= automatic deploy!');
   $telegram->sendMessage($content);
 }
