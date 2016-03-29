@@ -53,10 +53,10 @@ if ($text == "/where") {
   $content = array('chat_id' => $chat_id, 'latitude' => "37.5", 'longitude' => "15.1" );
   $telegram->sendLocation($content);
 }
-/*
+
 if($text == "/updateme") {
   $telegram->setWebhook("https://csgoonlinebot.herokuapp.com/update.php");
-  $telegram->sendMessage("updated");
+  $telegram->sendMessage("updated!");
 }
-*/
+
 ?>
